@@ -59,9 +59,6 @@ export default function Page() {
   };
 
   const getToolInvocations = (message: (typeof messages)[0]) => {
-    // Debug: log all parts to see what we're getting
-    console.log("[Message Parts]", JSON.stringify(message.parts, null, 2));
-
     return message.parts
       .filter((part) => {
         // Match both static tools (tool-{name}) and dynamic tools
@@ -80,16 +77,6 @@ export default function Page() {
         const toolName = isStaticTool
           ? part.type.replace("tool-", "")
           : (toolPart.toolName as string);
-
-        // Debug: log the actual structure
-        console.log("[ToolPart Debug]", {
-          type: part.type,
-          toolName,
-          state: toolPart.state,
-          hasInput: "input" in toolPart,
-          input: toolPart.input,
-          keys: Object.keys(toolPart),
-        });
 
         // AI SDK v6 uses 'input' for the tool parameters
         const args = (toolPart.input || {}) as Record<string, unknown>;

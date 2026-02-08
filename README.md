@@ -1,5 +1,7 @@
 # AI Search Chat App
 
+![Homepage Screenshot](./public/homepage.png)
+
 A Next.js chat application powered by Claude (Anthropic) with Exa AI search tools for real-time web search capabilities.
 
 ## Features
