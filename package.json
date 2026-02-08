@@ -1,0 +1,35 @@
+{
+  "name": "ai-search",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.23",
+    "@ai-sdk/fireworks": "^2.0.23",
+    "@ai-sdk/react": "^3.0.52",
+    "@vercel/analytics": "^1.4.1",
+    "ai": "^6.0.50",
+    "exa-js": "^1.4.8",
+    "lucide-react": "^0.460.0",
+    "next": "14.2.17",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.3",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
